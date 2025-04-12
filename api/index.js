@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Read the personal info from the sample_text.txt file
-const personalInfo = fs.readFileSync('./sample_text.txt', 'utf-8');
+const personalInfo = fs.readFileSync('../data/sample_text.txt', 'utf-8');
 
 const chat = model.startChat((history = []));
 
