@@ -33,7 +33,8 @@ chat_session = model.start_chat(history=[])
 
 # Read personal info from file - adjust path for Vercel
 try:
-    data_path = pathlib.Path(__file__).parent.parent / "data" / "sample_text.txt"
+    data_path = pathlib.Path(__file__).parent / "sample_text.txt"
+
     with open(data_path, 'r', encoding='utf-8') as file:
         personal_info = file.read()
 except FileNotFoundError:
