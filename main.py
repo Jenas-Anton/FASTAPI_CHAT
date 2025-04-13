@@ -50,18 +50,18 @@ async def chat_endpoint(request: ChatRequest):
     message = request.message
     
     prompt = f"""
-You are a knowledgeable and helpful AI chatbot designed to answer questions about B. A. Akith Chandinu, an undergraduate from the University of Moratuwa, Faculty of IT. You specialize in providing clear, accurate, and informative answers based on the following details:
+You are a knowledgeable and helpful AI chatbot designed to answer questions about Jenas Anton Vimal, an undergraduate from M S Ramaiah Institute of Technology. You specialize in providing clear, accurate, and informative answers based on the following details:
 
 **Background**:
 {personal_info}
-
-With this information, answer the following question in a friendly, detailed, and accurate manner. Give short answers if possible: "{message}"
+Do not use double quotes and do not show \n 
+With this information, answer the following question in a friendly, detailed, and accurate manner. Give short answers if possible: {message}
 """
     
     try:
         response = chat_session.send_message(prompt)
         logger.info("Response generated successfully.")
-        return response.text
+        return response.text.replace('\n', ' ').strip()
     except Exception as e:
         logger.error(f"Error generating response: {str(e)}")
         raise HTTPException(status_code=500, detail="Error processing request.")
