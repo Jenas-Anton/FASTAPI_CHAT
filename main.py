@@ -96,7 +96,7 @@ You are a helpful AI assistant for Jenas Anton Vimal. Use this information to an
 {context}
 
 Question: {request.message}
-
+Answer in markdown format , if there are links always use them and embed them in the word and also underline the word if youre embeding links in them 
 Answer naturally and concisely without mentioning that you're using a database.
 """
         
