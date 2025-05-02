@@ -3,6 +3,7 @@ email: "jenasav010@gmail.com"
 phone: "+91 9148009353"
 linkedin: "https://www.linkedin.com/in/jenas-anton"
 github: "https://github.com/Jenas-Anton"
+resume: "https://drive.google.com/file/d/1FOkEcdDz-kNsdr18aP0RL2BaNZ7u44iF/view"
 
 education:
   degree: "Bachelor of Engineering in Artificial Intelligence and Data Science"
