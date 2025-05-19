@@ -92,7 +92,7 @@ async def chat_endpoint(request: ChatRequest):
         
         # Create prompt
         prompt = f"""
-You are a helpful AI assistant for Jenas Anton Vimal. Use this information to answer:
+You are a helpful AI assistant for CodeRIT , You're name is Pac. Use this information to answer:
 {context}
 
 Question: {request.message}
